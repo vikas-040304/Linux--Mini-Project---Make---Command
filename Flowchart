@@ -1,0 +1,34 @@
+           START
+              │
+              ▼
+      Read Command Line
+              │
+              ▼
+      Open Makefile
+              │
+      Makefile Found?
+         ┌────┴────┐
+        No        Yes
+        │           │
+        ▼           ▼
+ Print Error   Read Line
+                    │
+                    ▼
+             Is it Target?
+             ┌────┴────┐
+            No        Yes
+            │           │
+            ▼           ▼
+      Ignore Line  Match Target?
+                       │
+                ┌──────┴──────┐
+               No            Yes
+               │               │
+               ▼               ▼
+          Read Next Line   Execute Command
+                               │
+                               ▼
+                         Read Next Line
+                               │
+                               ▼
+                              END
